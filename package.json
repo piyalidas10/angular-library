@@ -13,19 +13,11 @@
   ],
   "scripts": {
     "ng": "ng",
-    "init": "npm prune && npm install",
+    "init": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "lint-lib": "ng lint weather",
-    "test-lib-build": "ng lint weather && ng test weather --source-map --watch false --code-coverage --configuration-build",
-    "test-lib": "npm run lint-lib && ng test weather --source-map --watch false --code-coverage",
-    "build-lib": "ng build weather",
-    "run-host-app": "ng serve",
-    "remove-dist": "rm -rf dist",
-    "start": "npm run test-lib && ng serve",
-    "myscript": "npm install && start"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
